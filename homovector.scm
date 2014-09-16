@@ -10,6 +10,24 @@
 
 ;;;============================================================================
 
+(define-library (https://github.com/feeley/homovector)
+
+  (export ISO-8859-1-substring->u8vector
+          ISO-8859-1-string->u8vector
+          subu8vector->ISO-8859-1-string
+          u8vector->ISO-8859-1-string
+
+          hex-substring->u8vector
+          hex-string->u8vector
+          subu8vector->hex-string
+          u8vector->hex-string)
+
+  (import (gambit))
+
+  (begin
+
+;;;============================================================================
+
 (declare
  (standard-bindings)
  (extended-bindings)
@@ -115,5 +133,7 @@
    u8vect
    0
    (u8vector-length u8vect)))
+
+))
 
 ;;;============================================================================
